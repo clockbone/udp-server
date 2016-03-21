@@ -45,6 +45,7 @@ public class Bootstrap {
             public void run(){
                 executorService.shutdown();
                 messageHandler.quit();
+                //如果有数据源连接，这里还可以添加关闭数据源
 
             }
         });
